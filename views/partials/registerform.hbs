@@ -1,0 +1,12 @@
+<link rel="stylesheet" type="text/css" href="css/registerform.css">
+<form action="/register" id="register-form" method="POST">
+    <input placeholder="first name" type="text" name="fname" {{#if fname}}value="{{fname}}"{{/if}}>
+    <input placeholder="last name" type="text" name="lname" {{#if lname}}value="{{lname}}"{{/if}}>
+    <input placeholder="email" type="email" name="email" {{#if email}}value="{{email}}"{{/if}}>
+    <input placeholder="password" type="password" name="password" {{#if password}}value="{{password}}"{{/if}}>
+    <input placeholder="confirm password" type="password" name="password2" {{#if password2}}value="{{password2}}"{{/if}}>
+    {{#each errors}}
+    <p>{{this.message}}</p>
+    {{/each}}
+    <button type="submit" >Register</button>
+</form>
