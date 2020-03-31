@@ -29,6 +29,8 @@ install dependencies:
 npm install
 ```
 
+Be sure to configure your .env file. You'll need `PORT`, `MONGO_URI`, and `SECRET` declarations
+
 if you have nodemon install globally you can use the following to start the server:
 ```
 nodemon server.js
